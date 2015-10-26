@@ -2,6 +2,15 @@ doctype html
 html
   head
     title= title
+    link(href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css')
+    meta(name="viewport" content="initial-scale=1.0, user-scalable=no")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+  
+   #wrapper
+      nav
+        a.linkButton(href='/') Home
+        a.linkButton(href='/bio') My Bio
+        a.linkButton(href='/resume') My Resume
+      
+      block content
